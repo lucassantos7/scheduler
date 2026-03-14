@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: agendamento-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: agendamento_db
+    ports:
+      - "5432:5432"
